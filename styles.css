@@ -1,3 +1,28 @@
+
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-weight: 300;
+    src: url('../fonts/poppins-v24-latin-300.woff2') format('woff2');
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-weight: 400;
+    src: url('../fonts/poppins-v24-latin-regular.woff2') format('woff2');
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-weight: 600;
+    src: url('../fonts/poppins-v24-latin-600.woff2') format('woff2');
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-weight: 900;
+    src: url('../fonts/poppins-v24-latin-900.woff2') format('woff2');
+}
 :root {
     --color-primary-dark: #31261a;
     --color-primary-light: #faf4ea;
@@ -7,6 +32,13 @@
 /* Base*/
 body {
     color: var(--color-primary-dark);
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+address {
+    font-style: normal;
 }
 ul
 {
@@ -17,6 +49,7 @@ ul
 .button
 {
     color: var(--color-primary-light);
+    font-weight: 600;
     background-color: var(--color-brand-light);
     border: 2px solid var(--color-brand-light);
     border-radius: 8px;
@@ -29,22 +62,22 @@ ul
     background-color: transparent;
 }
 
-.button
-{
-    color: brown;
-}
-
 /* Link */
 .link {
     color: var(--color-primary-light);
+    text-decoration: none;
 }
 
 .link:hover {
     color: var(--color-brand-light);
+    text-decoration: underline;
 }
 /* Hero section */
 .hero-title {
     color: var(--color-primary-light);
+    text-align: center;
+    font-size: 128px;
+    font-weight: 900;
 }
 .hero-title .accent {
     color: var(--color-brand-light);
@@ -55,7 +88,56 @@ ul
     background-color: var(--color-brand-light);
     color: var(--color-primary-dark);
 }
+.advantages-item {
+    font-size: 20px;
+    font-weight: 300;
+}
+.section-title {
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 1.3px;
+}
 
 .section-title .accent { 
     color: var(--color-brand-dark);
+}
+
+/* Traditions-section*/
+.traditions-text {
+   white-space: nowrap;
+}
+
+.traditions-text .brand {
+    color: var(--color-brand-light);
+    font-weight: 600;
+}
+.traditions-text .uppercase {
+    text-transform: uppercase;
+}
+/*Chefs section*/
+.chef-title {
+    font-size: 40px;
+    font-weight: 600;
+}
+/* Formats section */
+.format-title {
+    font-size: 24px;
+    font-weight: 600;
+}
+.format-text {
+    font-size: 14px;
+    font-weight: 600;
+}
+/* Footer */
+.address-link {
+    color: var(--color-primary-light);
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+}
+.address-link:hover {
+    color: var(--color-brand-light);
+}
+.address-copyright {
+    font-size: 14px;
 }
